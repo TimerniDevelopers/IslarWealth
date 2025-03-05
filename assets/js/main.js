@@ -434,5 +434,27 @@
         }
       });    
 
+document.addEventListener('DOMContentLoaded', function() {
+    const video = document.getElementById('video');
+    const playButton = document.getElementById('custom-play-button');
+  
+    // Play video and hide the custom play button
+    playButton.addEventListener('click', function() {
+      video.play();
+      playButton.classList.add('hidden');
+    });
+  
+    // Show the play button again if video is paused
+    video.addEventListener('pause', function() {
+      playButton.classList.remove('hidden');
+    });
+  
+    // Automatically hide the play button once the video starts playing
+    video.addEventListener('play', function() {
+      playButton.classList.add('hidden');
+    });
+  });
+
+
 })(jQuery);
 
