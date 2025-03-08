@@ -1783,6 +1783,7 @@ Page Title
 .truncate-2-custom {
     -webkit-line-clamp: 2;
 }
+.truncate-3-custom,
 .truncate-1-custom, .truncate-2-custom {
     -webkit-box-orient: vertical;
     display: -webkit-box;
