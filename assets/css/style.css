@@ -3683,13 +3683,14 @@ opacity: 1;
 .carousel-wrapper {
   margin: 20px 0;
   position: relative;
-
 }
 .carousel-wrapper .content-r i{
   font-size: 09px;
   color: #fff;
 }
-
+.carousel-item__card{
+  position: relative;
+}
 .carousel-wrapper img {
     overflow: hidden;
     width: 100%;
@@ -3713,6 +3714,7 @@ opacity: 1;
   left: 20px;
   z-index: 11;
 }
+
 .carousel-wrapper p{
   color: #fff;
   margin-bottom: 5px;
