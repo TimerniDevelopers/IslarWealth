@@ -408,7 +408,7 @@
 
     $(".trending-carousel").owlCarousel({
         nav: true,
-        loop:false,
+        loop:true,
         dots: false,
         pagination: false,
         margin: 25,
@@ -455,6 +455,38 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
+  var $servicesSlider = $(".services-slider");
+    $servicesSlider.owlCarousel({
+        loop: false,
+        nav: true,
+        navText: [
+            '<i class="fa fa-chevron-left"></i>',
+            '<i class="fas fa-chevron-right"></i>',
+        ],
+        dots: false,
+        autoplay: false,
+        margin: 5,
+        responsive: {
+            0: {
+                items: 2,
+            },
+            768: {
+                items: 5,
+            },
+            992: {
+                items: 6,
+            },
+            1399: {
+                items: 6,
+            },
+        }
+    });
+
+  // Activate Bootstrap tab when clicking on a tab item in the carousel
+  $('.nav-link').on('click', function() {
+    $('.nav-link').removeClass('active');
+    $(this).addClass('active');
+  });
 
 })(jQuery);
 

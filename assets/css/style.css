@@ -4464,4 +4464,96 @@ content .date i {
     padding-right: 0px;
   }
 }
+.process-heading{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.process-area-two p{
+  font-size: 17px;
+  color: #000;
+}
+.process-wrapper-two .icon i{
+  font-size: 70px; 
+  color: #2f047a;
+}
+.process-contact strong{
+  color: #2f047a;
+}
 
+
+
+/* 15/9/25 */
+.services-slider{
+  position: relative;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.services-slider.owl-theme .owl-nav [class*=owl-] {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  display: flex;
+  background: #64b0e3; 
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  color: var(--white);
+  font-size: 20px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.services-slider.owl-theme .owl-nav .owl-next {
+  right: -2%;
+}
+
+.services-slider.owl-theme .owl-nav .owl-prev {
+  left: -2%;
+}
+.services-slider.owl-theme .owl-nav i{
+  color: #fff;
+}
+
+
+.services-slider .item .nav-link{
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+.services-slider .item .nav-link.active{
+background-color: #64b0e3;
+    color: white;
+}
+.services-slider .owl-item{
+  width: auto !important;
+}
+.services-slider.owl-carousel .owl-stage {
+  width: max-content !important;
+}
+.services-slider.owl-theme .owl-nav [class*=owl-]{
+   margin: 0px;
+}
