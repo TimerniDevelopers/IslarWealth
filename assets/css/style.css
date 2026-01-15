@@ -1721,12 +1721,13 @@ opacity: 1;
 ***/
 .service-area {
   text-align: center;
-  padding: 60px 0px;
+  margin-top: 70px;
 }
 .service__item-two {
   margin-bottom: 30px;
   overflow: hidden;
   position: relative;
+  display: block;
 }
 .service__thumb-two {
   overflow: hidden;
@@ -1761,12 +1762,9 @@ opacity: 1;
   visibility: visible;
 }
 .service__content-two {
-  left: 30px;
-  margin-top: 100px;
   opacity: 0;
-  padding: 30px 0;
+  padding: 20px;
   position: absolute;
-  right: 30px;
   text-align: center;
   top: 50%;
   transform: translateY(-50%);
@@ -1786,6 +1784,7 @@ opacity: 1;
   font-weight: 500;
   margin-bottom: 15px;
 }
+.service-area .link-arrow-two,
 .link-arrow-two a {
   align-items: center;
   background: #F7A400;
@@ -1798,6 +1797,7 @@ opacity: 1;
   margin: 0 auto;
   width: 50px;
 }
+.service-area .link-arrow svg,
 .link-arrow a svg {
   width: 20px;
 }
@@ -4556,4 +4556,195 @@ background-color: #64b0e3;
 }
 .services-slider.owl-theme .owl-nav [class*=owl-]{
    margin: 0px;
+}
+.slider-one__nav {
+    display: none;
+}
+
+
+/* 15/01/26 */
+.client-say {
+    background-color: #F8F8F8;
+    padding: 70px 0px;
+    position: relative;
+}
+.client-say-wrapper{
+  margin-top: 50px;
+  position: relative;
+}
+.client-say-wrapper .card-header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: .75rem 1rem;
+    gap: 10px;
+}
+.client-say-wrapper .client-say-inf img {
+    width: 50px !important;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: inline-block;
+}
+.client-say-wrapper .review-g img {
+    width: 24px !important;
+}
+.client-review .star-icon{
+  line-height: 0;
+  font-size: 13px;
+  display: flex;
+  gap: 1px;
+}
+.client-say-wrapper  .client-say-inf {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+.client-say-wrapper  .client-review small{
+  color: #7e7e7e;
+  font-size: 13px;
+}
+.client-say-wrapper  .client-review i{
+  color: #f0ad4e;
+  font-size: 12px;
+}
+
+.client-say-wrapper .card-body p{
+      font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+} 
+
+.client-say-wrapper.owl-theme .owl-dots .owl-dot.active span, 
+.client-say-wrapper.owl-theme .owl-dots .owl-dot:hover span {
+    background: #64b0e3;
+}
+
+.client-say-wrapper.owl-theme .owl-dots{
+  margin-top: 20px;
+}
+
+.advisor-wrapper{
+  position: relative;
+ 
+}
+.advisor-wrapper .card{
+  position: sticky;
+  top: 20%;
+   transition: background-color 0.3s ease, padding-left 0.3s ease;
+}
+.advisor-wrapper .card .nav-link {
+  color: #555;
+  text-decoration: none;
+  display: block;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.advisor-wrapper .card .nav-link.active {
+  color: #0d6efd !important;
+  background-color: #f0f6ff;
+  border-left: 2px solid #0d6efd !important;
+}
+.advisor-wrapper .card .card-body {
+    padding: 1rem .5rem;
+}
+
+.advisor-wrapper .advisor-des{
+    transition: all 0.6s ease;
+}
+.advisor-wrapper .advisor-des p{
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+.advisor-wrapper .advisor-content{
+  margin-bottom: 20px;
+}
+.advisor-wrapper h3{
+  font-size: 24px;
+}
+.advisor-wrapper .advisor-content li  {
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    font-size: 14px;
+    margin-top: 10px;
+}
+/* .list-group{
+  position: sticky;
+  top: 0px;
+} */
+    
+ .truncate-5-custom {
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 5;
+}
+.service-area .service__item-two .title{
+  font-size: 20px;
+  margin-top: 12px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.service-area .service__item-two p{
+  color: #fff;
+}
+
+.certificate-area {
+  margin-top: 50px;
+}
+.certificate-des {
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #000;
+    margin-bottom: 15px;
+    font-family: "Style Script", cursive;
+    
+}
+.team-area-main{
+  position: relative;
+  margin-top: 50px;
+}
+.help-area-main{
+ position: relative;
+}
+.help-area-main li img{
+  max-width: 35px;
+}
+.help-area-main .help-l-des li{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #0e104b;
+  font-weight: 500;
+  font-size: 18px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+   transition: all 0.3s ease;
+   margin-bottom: 20px;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 991px) {
+  .flex-sm-c-reverse{
+    flex-direction: column-reverse;
+  }
+  .padding-left-50 {
+    padding-left: 0px;
+  }
+  .padding-right-50 {
+    padding-right: 0px;
+  }
 }
