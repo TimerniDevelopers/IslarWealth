@@ -1,11 +1,11 @@
 (function($) {
     "use strict";
     // data-background
-    $("[data-background").each(function() {
+    $("[data-background]").each(function() {
         $(this).css("background-image", "url(" + $(this).attr("data-background") + ")")
     });
     // data-bg
-    $("[data-bg-color").each(function() {
+    $("[data-bg-color]").each(function() {
         $(this).css("background", $(this).attr("data-bg-color"))
     });
     // meanmenu
@@ -556,7 +556,7 @@ function initScrollSpy(navSelector, sectionSelector, offset = 100) {
 // Usage Example
 // =============================
 document.addEventListener('DOMContentLoaded', function() {
-    initScrollSpy('.advisor-wrapper .card .nav-link', '.advisor-section', 100);
+    initScrollSpy('.advisor-wrapper .card li', '.advisor-section', 100);
 });
 
 })(jQuery);
