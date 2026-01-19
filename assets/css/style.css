@@ -4584,6 +4584,7 @@ background-color: #64b0e3;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
 }
+
 .service-area .service__item-two p{
   color: #fff;
 }
@@ -4591,15 +4592,7 @@ background-color: #64b0e3;
 .certificate-area {
   margin-top: 50px;
 }
-.certificate-des {
-    font-size: 23px;
-    font-weight: 500;
-    line-height: 30px;
-    color: #000;
-    margin-bottom: 15px;
-    font-family: "Style Script", cursive;
-    
-}
+
 .team-area-main{
   position: relative;
   margin-top: 50px;
@@ -4712,9 +4705,10 @@ background-color: #64b0e3;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
 }
-
+.advisor-wrapper .card li:hover,
+.advisor-wrapper .card li a:hover,
 .advisor-wrapper .card li.active {
-  color: #0d6efd !important;
+     color: #3498db !important;
   
 }
 .advisor-wrapper .card .card-body {
