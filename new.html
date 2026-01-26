@@ -23,12 +23,161 @@
       <link rel="stylesheet" href="assets/css/slick.css">
       <link rel="stylesheet" href="assets/css/fancy.css">
       <link rel="stylesheet" href="assets/css/flaticon.css">
-      <link rel="stylesheet" href="assets/css/style.css">
+      <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
       <link rel="stylesheet" href="assets/css/default.css">
       <link rel="stylesheet" href="assets/css/responsive.css">
+      <style>
+         /* ==============================
+   Advisor Wrapper Styling
+   ============================== */
+.advisor-wrapper {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Section Titles */
+.advisor-wrapper .advisor-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #0f3c6e;
+}
+
+.advisor-wrapper .advisor-des p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* ==============================
+   Table of Contents Card
+   ============================== */
+.advisor-wrapper .card {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.advisor-wrapper .card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.advisor-wrapper .card-header {
+    background-color: #0f3c6e;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+.advisor-wrapper .card-body {
+    padding: 20px;
+}
+
+/* TOC List Styling */
+#advisor-wrapper .card-body ul,
+#list-example {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#advisor-wrapper .card-body li,
+#list-example li {
+    margin-bottom: 12px;
+}
+
+#advisor-wrapper .card-body li a,
+#list-example li a {
+    display: block;
+    padding: 8px 12px;
+    color: #0f3c6e;
+    text-decoration: none;
+    font-weight: 500;
+    border-left: 3px solid transparent;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+#advisor-wrapper .card-body li a:hover,
+#list-example li a:hover {
+    background-color: #e6f0ff;
+    border-left-color: #0f3c6e;
+}
+
+/* Active Link Highlight */
+#advisor-wrapper .card-body li a.active,
+#list-example li a.active {
+    color: #fff;
+    background-color: #0f3c6e;
+    border-left-color: #ffb400;
+    font-weight: 600;
+}
+
+/* Scrollspy Example Container */
+.scrollspy-example {
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .advisor-wrapper {
+        padding: 40px 20px;
+    }
+    .advisor-wrapper .advisor-title {
+        font-size: 22px;
+    }
+    .advisor-wrapper .card-header {
+        font-size: 18px;
+    }
+}
+
+      </style>
    </head>
    <body>
-    
+    <main>
+          
+       <!-- Slider Section -->
+         <section class="testimonial-style-one" style="background-image:url('assets/img/image-3.jpg');">
+            <div class="container">
+               <div class="content-box text-center pb-4">
+                  <div class="sec-title ">
+                     <h2>Testimonials</h2>
+                  </div>
+                 </div>
+              <div class="carousel-outer">
+                <div class="quote-icon">
+                  <span class="fa fa-quote-left"></span>
+                </div>
+                <!--Testimonial carousel one-->
+                <div class="testimonial-carousel-one single-item-carousel owl-carousel owl-theme owl-loaded">
+                  <div class="slide-item">
+                     <div class="text-content">“Joseph has more than 20 years of experience in the accounting, tax and financial services business, including working for fortune 500 companies in and around Washington DC providing reporting and analysis services. Joseph earned his degrees in Accountancy at Brigham Young University and Law at Pepperdine School of Law.”</div>
+                     <div class="info-style-one">
+                       <h4>Joseph Lewis</h4>
+                       <div class="designation">Isler Wealth Management, LLC</div>
+                     </div>
+                   </div>
+                   <div class="slide-item">
+                     <div class="text-content">“Joseph has more than 20 years of experience in the accounting, tax and financial services business, including working for fortune 500 companies in and around Washington DC providing reporting and analysis services. Joseph earned his degrees in Accountancy at Brigham Young University and Law at Pepperdine School of Law.”</div>
+                     <div class="info-style-one">
+                       <h4>Joseph Lewis</h4>
+                       <div class="designation">Isler Wealth Management, LLC</div>
+                     </div>
+                   </div>
+                </div>
+              </div>
+            </div>
+          </section>
+         <!-- Slider Section -->
          <!-- Slider Section -->
           <section class="client-say">
             <div class="container">
@@ -226,106 +375,131 @@
           </section>
          <!-- Slider Section -->
           
-           
-         <section class="advisor-wrapper">
-            <div class="container">
-               <div class="content-box text-center mb-50">
-                  <div class="sec-title">
-                     <h2>Why choose the Isler wealth management team?</h2>
-                 </div>
-                 <h5 class="sec-sub-title">
-                  Your financial goal is the first priority for our team. We deliver personalized strategies for your long-term vision. For each of our client’s first approach, with the help of financial planning. We create disciplined investment management. We are always focused on transparency, clarity, and trust so that you can easily understand your plan and progress.
-                 </h5>
-               </div>
-               <div class="row">
-                  
-                  <div class="col-xl-8 col-lg-8 mb-3">
-                     <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-                        <div id="list-item-1" class="advisor-section"> 
-                           <div class="advisor-content">
-                              <h3 class="advisor-title">Why hire Isler Wealth Management Advisor ?</h3>
-                              <div class="advisor-des">
-                                 <p>By hiring an Isler Wealth Management Advisor, you will get a trusted and dedicated partner to help you grow your wealth. Our advisor will deeply understand your goals and create an outstanding plan for your specific needs. </p>
-                                 <p>We have deep knowledge of the U.S financial landscape, so we provide guidance across investment management, retirement planning, tax-effective strategies, and more. We make complex financial decisions to simplify so you can easily adapt your decision as life changes. </p>
-                                 <p>
-                                 By combining the client-first mindset and decades of experience, we empower you to make focused, informed choices with greater financial clarity and peace of mind.  
-                                 </p>
-                              </div>
-                           </div>
-                        </div>
-                        <div id="list-item-2" class="advisor-section">
-                           <div class="advisor-content">
-                              <h3 class="advisor-title">
-                                 How Isler wealth helps in your planning?
-                              </h3>
-                              <div class="advisor-des">
-                                <p>At Isler Wealth Management, we strongly believe that the foundation of success and confidence is effective planning. We start our approach with understanding your future vision. We design your strategies according to your planning, such as financial planning, estate planning, tax planning, retirement planning, and more. </p>
-                                 <p>>We have over 20 years of working experience in personalized and hands-on processes. We analyze your financial position, identify opportunities with risk, and create a suitable plan according to your desired outcomes. In the changing market conditions, we use disciplined marketing investment to grow and protect your wealth. </p>
-                                 <p>
-                                 By offering transparency, clarity, and trusted guidance. We help in your planning to make the best decision today that secures your future financially.
-                                 </p>
-                              </div>
-                           </div>
-                        </div>
-                        <div id="list-item-3" class="advisor-section">
-                           <div class="advisor-content">
-                              <h3 class="advisor-title">Will My Wealth Management Be Successful with Isler Wealth Management?</h3>
-                              <div class="advisor-des">
-                                 <p>If you want long-term financial success you must have to choose the right wealth management partner.We build a strong reputation by helping clients successfully. Success does not depend on generic market assumptions. It totally depends on a personalized approach and a financial plan.</p>
-                                 <p>At Isler Wealth Management, we combine thoughtful guidance and disciplined strategy together. We take a long term perspective that helps to avoid emotional decisions for our clients. It also helps clients to stay aligned with their financial objectives. With us, your success is not only measured by numbers, but also by your peace of mind. It will come from knowing your wealth management consultant is highly professional and attentive.</p>
-                                  
-                              </div>
-                           </div>
-                        </div>
-                        <div id="list-item-4" class="advisor-section">
-                           <div class="advisor-content">
-                              <h3 class="advisor-title">What Will My Isler Wealth Management Advisor Do?</h3>
-                              <div class="advisor-des">
-                                 <p>Your advisor acts as a dedicated partner, who guides your financial life with purpose and clarity. In the beginning your advisor takes some time to understand your financial situation, goals and future aspirations. This detailed understanding will help your advisor to create a personalised strategy that really matters.</p>
-                                 <p>Our best trust services for wealth management​ consultants develop a comprehensive plan that includes investment management, retirement planning, risk management and more. The advisor explains to you the complex financial concepts clearly that helps to make your decisions and understand strategies. Your advisor is committed to suggesting and implementing the best plan. </p>
-                                  
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-xl-4 col-lg-4 mb-3">
-                     <div class="card">
-                        <div class="card-header">
-                           <h3>Table of Contents</h3>
-                        </div>
-                        <div class="card-body">
-                           <ul id="list-example">
-                              <li>
-                                 <a href="#list-item-1" >
-                                   Why hire Isler Wealth Management Advisor ?
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="#list-item-2" >
-                                  How Isler wealth helps in your planning?
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="#list-item-3" >
-                                   Will My Wealth Management Be Successful with Isler Wealth Management?
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="#list-item-4" >
-                                   What Will My Isler Wealth Management Advisor Do?
-                                 </a>
-                              </li>
-                          </ul>
-                        </div>
-                        
-                     </div>
-                     
-                  </div>
-               </div>
+     <section class="advisor-wrapper">
+  <div class="container">
+    <!-- Section Header -->
+    <div class="content-box text-center mb-50">
+      <div class="sec-title">
+        <h2>Why choose the Isler wealth management team?</h2>
+      </div>
+      <h5 class="sec-sub-title">
+        Your financial goal is the first priority for our team. We deliver personalized strategies for your long-term vision. We create disciplined investment management and focus on transparency, clarity, and trust so that you can easily understand your plan and progress.
+      </h5>
+    </div>
+
+    <div class="row">
+      <!-- Advisor Sections -->
+      <div class="col-xl-8 col-lg-8 mb-3">
+        <div class="scrollspy-example" tabindex="0">
+          <div id="list-item-1" class="advisor-section">
+            <div class="advisor-content">
+              <h3 class="advisor-title">Why hire Isler Wealth Management Advisor?</h3>
+              <div class="advisor-des">
+                <p>By hiring an Isler Wealth Management Advisor, you get a trusted partner to help grow your wealth. Your advisor deeply understands your goals and creates a tailored plan.</p>
+                <p>We provide guidance across investment management, retirement planning, and tax-effective strategies.</p>
+              </div>
             </div>
-         </section>
-         
+          </div>
+
+          <div id="list-item-2" class="advisor-section">
+            <div class="advisor-content">
+              <h3 class="advisor-title">How Isler wealth helps in your planning?</h3>
+              <div class="advisor-des">
+                <p>We start by understanding your future vision and create strategies tailored to financial, estate, tax, and retirement planning.</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="list-item-3" class="advisor-section">
+            <div class="advisor-content">
+              <h3 class="advisor-title">Will My Wealth Management Be Successful?</h3>
+              <div class="advisor-des">
+                <p>Long-term financial success requires choosing the right partner. We provide personalized strategies, not generic market assumptions.</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="list-item-4" class="advisor-section">
+            <div class="advisor-content">
+              <h3 class="advisor-title">What Will My Isler Wealth Management Advisor Do?</h3>
+              <div class="advisor-des">
+                <p>Your advisor acts as a dedicated partner, guiding your financial life with purpose and clarity.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Table of Contents -->
+      <div class="col-xl-4 col-lg-4 mb-3">
+        <div class="card sticky-toc">
+          <div class="card-header">
+            <h3>Table of Contents</h3>
+          </div>
+          <div class="card-body">
+            <ul id="toc-list">
+              <!-- TOC items will be generated dynamically -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==============================
+     CSS
+============================== -->
+<style>
+.advisor-wrapper {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    font-family: 'Poppins', sans-serif;
+}
+.advisor-wrapper .sec-title h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0f3c6e;
+    margin-bottom: 15px;
+}
+.advisor-wrapper .sec-sub-title {
+    font-size: 18px;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+.advisor-wrapper .advisor-section { margin-bottom: 50px; }
+.advisor-wrapper .advisor-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #0f3c6e;
+}
+.advisor-wrapper .advisor-des p { font-size: 16px; line-height: 1.7; color: #333; margin-bottom: 15px; }
+
+.advisor-wrapper .card { border: 1px solid #e0e0e0; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+.advisor-wrapper .card-header { background-color: #0f3c6e; color: #fff; font-size: 20px; font-weight: 600; padding: 15px 20px; border-radius: 10px 10px 0 0; }
+.advisor-wrapper .card-body { padding: 20px; }
+#list-example { list-style: none; padding: 0; margin: 0; }
+#list-example li { margin-bottom: 12px; }
+#list-example li a {
+    display: block; padding: 8px 12px; color: #0f3c6e; text-decoration: none; font-weight: 500;
+    border-left: 3px solid transparent; border-radius: 4px; transition: all 0.3s ease;
+}
+#list-example li a:hover { background-color: #e6f0ff; border-left-color: #0f3c6e; }
+#list-example li a.active { color: #fff; background-color: #0f3c6e; border-left-color: #ffb400; font-weight: 600; }
+
+@media (min-width: 992px) {
+    .advisor-wrapper .col-xl-4 { position: sticky; top: 100px; }
+}
+@media (max-width: 992px) {
+    .advisor-wrapper { padding: 40px 20px; }
+    .advisor-wrapper .advisor-title { font-size: 22px; }
+    .advisor-wrapper .card-header { font-size: 18px; }
+}
+</style>
+
 
    
         </main>
@@ -353,6 +527,63 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
       <script src="assets/js/main.js"></script>
+      
+<!-- ==============================
+     Scroll Spy JS
+============================== -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const sections = document.querySelectorAll('.advisor-section');
+  const tocList = document.getElementById('toc-list');
+
+  // Generate TOC dynamically
+  sections.forEach((section, index) => {
+      const title = section.querySelector('.advisor-title').innerText;
+      const id = section.getAttribute('id');
+      const li = document.createElement('li');
+      li.innerHTML = `<a href="#${id}">${title}</a>`;
+      tocList.appendChild(li);
+  });
+
+  const links = tocList.querySelectorAll('a');
+
+  function removeActive() { links.forEach(link => link.classList.remove('active')); }
+
+  // Smooth scroll on click
+  links.forEach(link => {
+      link.addEventListener('click', e => {
+          e.preventDefault();
+          const target = document.querySelector(link.getAttribute('href'));
+          if (!target) return;
+          window.scrollTo({
+              top: target.getBoundingClientRect().top + window.scrollY - 100,
+              behavior: 'smooth'
+          });
+          removeActive();
+          link.classList.add('active');
+      });
+  });
+
+  // Scroll spy
+  window.addEventListener('scroll', () => {
+      const scrollPos = window.scrollY + 110;
+      sections.forEach((section, index) => {
+          const rect = section.getBoundingClientRect();
+          const sectionTop = rect.top + window.scrollY;
+          const sectionBottom = sectionTop + rect.height;
+          if (scrollPos >= sectionTop && scrollPos < sectionBottom) {
+              removeActive();
+              links[index].classList.add('active');
+          }
+      });
+  });
+
+  // Make first link active by default
+  if (links[0]) links[0].classList.add('active');
+});
+
+</script>
+
       
      
    </body>

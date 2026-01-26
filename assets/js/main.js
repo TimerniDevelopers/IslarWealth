@@ -380,7 +380,7 @@
                 items: 1
             },
             1024: {
-                items: 1
+                items: 2
             },
         }
     });
@@ -514,50 +514,6 @@ document.addEventListener('DOMContentLoaded', function() {
             },
         }
     });
-    // =============================
-// Scroll Spy & Active Link Function
-// =============================
-function initScrollSpy(navSelector, sectionSelector, offset = 100) {
-    const links = document.querySelectorAll(navSelector);
-    const sections = document.querySelectorAll(sectionSelector);
-
-    if (!links.length || !sections.length) return;
-
-    // Make first link active by default
-    links[0].classList.add('active');
-
-    // Function to remove active class from all links
-    function removeActive() {
-        links.forEach(link => link.classList.remove('active'));
-    }
-
-    // Click behavior: make clicked link active
-    links.forEach(link => {
-        link.addEventListener('click', e => {
-            removeActive();
-            link.classList.add('active');
-        });
-    });
-
-    // Scroll behavior: update active link based on scroll position
-    window.addEventListener('scroll', () => {
-        let scrollPos = window.scrollY + offset;
-
-        sections.forEach((section, index) => {
-            if (scrollPos >= section.offsetTop && scrollPos < section.offsetTop + section.offsetHeight) {
-                removeActive();
-                links[index].classList.add('active');
-            }
-        });
-    });
-}
-
-// =============================
-// Usage Example
-// =============================
-document.addEventListener('DOMContentLoaded', function() {
-    initScrollSpy('.advisor-wrapper .card li', '.advisor-section', 100);
-});
-
+ 
 })(jQuery);
 
