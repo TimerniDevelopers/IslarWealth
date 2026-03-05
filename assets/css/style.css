@@ -3313,16 +3313,19 @@ opacity: 1;
             background: var(--theme-color2);
             border-radius: 50%;
             color: #fff;
-            display: flex
-          ;
+            display: flex          ;
             flex: 0 0 auto;
             font-size: 15px;
             height: 30px;
             justify-content: center;
             line-height: 0;
-            transform: translateY(3px);
+            transform: translateY(0px);
             width: 30px;
-          }
+            -webkit-transform: translateY(0px);
+            -moz-transform: translateY(0px);
+            -ms-transform: translateY(0px);
+            -o-transform: translateY(0px);
+}
 
 
 /* *** blog */
@@ -4837,4 +4840,93 @@ background-color: #64b0e3;
         right: 2.5%;
         bottom: 80px;
     }
+}
+
+
+
+/* service 04/03/26 */
+.services__details-two {
+    background-color: #f6f6f6;
+}
+.services__details-two p{
+  font-size: 16px;
+  color: #000;
+}
+.ser-hero-title {
+    font-weight: 700;
+    color: #000;
+    line-height: 1.1;
+    font-size: 2rem;
+}
+.ser-hero-title-2 span,
+.ser-hero-title span {
+    color: #64b0e3;
+}
+.ser-hero-title-2 {
+      font-size: 1.7rem ;
+      font-weight: 700;
+      margin-bottom: 8px;
+} 
+.services__details-two .list-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.services__details-two .about__list-box .list-wrap li {
+    width: 100%;
+    align-items: center;
+    line-height: 17px;
+    color: #000;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+}
+.services__details-two .about__list-box .list-wrap li i {
+    color: #fff;
+    background-color: #64b0e3
+}
+.services__details-two .mid-link {
+    color: #64b0e3;
+    text-decoration: none;
+}
+.who-we-serve p{
+  font-size: 16px;
+  color: #000;
+}
+.who-we-serve {
+  background-color:#ffff;
+  padding: 50px 0px;
+}
+.advisor-wrapper-two .advisor-content li {
+    font-weight: 500;
+    line-height: 1.5;
+    color: #212529;
+    font-size: 15px;
+    margin-top: 10px;
+}
+.advisor-wrapper-two .advisor-content p{
+  font-size: 16px;
+}
+
+@media (max-width: 767px) {
+    .ser-hero-title  {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .ser-hero-title-2 {
+        font-size: 20px ;
+  } 
+  .services__details-two .about__list-box .list-wrap li {
+    font-size: 15px;
+  }
+   .about__list-box h5,
+  .about__list-box h4 {
+    font-size: 16px;
+  }
+  .about__list-box .list-wrap li {
+    font-size: 15px;
+    gap: 9px;
+  }
+  .services__details-two .list-wrap{
+    display: block;
+  }
+
 }
